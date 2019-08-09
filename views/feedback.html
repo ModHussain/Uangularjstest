@@ -1,0 +1,55 @@
+
+      <div class="container">
+        <nav class="navbar navbar-dark py-0 bg-primary navbar-expand-lg py-md-0 fixed-top" style="height: 53px">
+            <div class="container">
+                  <a class="navbar-brand mx-5" href="">AngularJs Test</a>
+                  <button class="navbar-toggler mt-1 bg-success" type="button" data-toggle="collapse" data-target="#navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                      <i class="fa fa-bars"></i> 
+                      <i class="fa fa-bars"></i> 
+                      <i class="fa fa-bars"></i>
+                      <i class="fa fa-bars"></i>
+                  </button>
+                  <div class="navbar-collapse collapse" id="navbarNav">
+                      <ul class="navbar-nav ">
+                        <li class="nav-item py-0  mx-5"><a ui-sref="Home" class="nav-link pull-right"><span class="fa fa-home"></span>&nbsp;&nbsp;Home</a></li>
+                        <li class="nav-item py-0  mx-5"><a ui-sref="product" class="nav-link pull-right"><span class="fa fa-product-hunt"></span>&nbsp;&nbsp;Products</a></li>
+                        <li class="nav-item py-0  mx-5"><a ui-sref="feedback" class="nav-link pull-right"><span class="fa fa-feed"></span>&nbsp;&nbsp;Feedback</a></li>
+                      </ul>
+                      
+                      <ul class="navbar-nav navbar-right float-right ml-5">
+                          <li class="nav-item py-0"><a ui-sref="login" class="nav-link float-right"><span class="fa fa-sign-out"></span>&nbsp;&nbsp;Logout</a></li>
+                      </ul>
+                    
+                  </div>
+                </div>
+              </nav>
+
+      </div>
+<div class="container mt-5">
+       
+    <div class="row justify-content-sm-center">
+      <div class="col-sm-6 col-md-6">
+  
+        <div class="card border-info text-center">
+          <div class="card-header">
+            <h4 class="text-center">Give to Feedback Us</h4>
+          </div>
+          <div class="card-body">
+            <img src="./img/feedback.png">
+           
+            <form class="form-signin mt-2" ng-submit="Feedbk(feed)" >
+
+              <input type="text" class="form-control mb-2" ng-model="feed.name" placeholder="Name" required autofocus>
+              <input type="text" class="form-control mb-2" ng-model="feed.phone" maxlength="10" placeholder="Phone Number" required >
+              <input type="text" class="form-control mb-2" ng-model="feed.email" placeholder="Email" required >
+              <textarea class="form-control mb-2" ng-model="feed.content" placeholder="Your Feedback"></textarea>
+              <button class="btn btn-lg btn-primary btn-block mb-1" type="submit">Submit</button>
+              
+             
+            </form>
+          </div>
+        </div>
+       
+      </div>
+    </div>
+  </div>
